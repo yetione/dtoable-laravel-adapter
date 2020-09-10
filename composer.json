@@ -1,0 +1,28 @@
+{
+    "name": "yetione/dtoable-laravel-adapter",
+    "description": "DTOable adapter for Laravel/Lumen",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yeti",
+            "email": "jub45@yandex.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.4",
+        "illuminate/support": "^7",
+        "yetione/dtoable": "^1"
+    },
+    "autoload": {
+        "psr-4": { "Yetione\\DTOAdapter\\": "src/"}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yetione\\DTOAdapter\\Providers\\DTOServiceProvider"
+            ]
+        }
+    }
+}
